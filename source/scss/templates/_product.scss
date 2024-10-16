@@ -1,0 +1,50 @@
+/*----------------------
+ Product STYLE
+-----------------------*/
+
+.product-section{
+    padding: 10px 0;
+}
+
+.logo-nav-img{
+    width: 26%;
+}
+
+/* Smooth transition for logo switch (fade effect) */
+.text-logo,
+.img-logo {
+  opacity: 1;
+  transition: opacity 0.3s ease;  /* Control the fading effect */
+}
+
+.header-white {
+    transition: background-color 0.3s ease;
+  }
+
+.product-img {
+    img {
+        width: 80%;
+        height: 40vh;  // Using viewport height for responsive height
+        object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+        img {
+            width: 50%;
+            height: 30vh;  // Smaller height for smaller screens
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .product-img-small {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 40%;
+            object-fit: cover;
+        }
+    }
+}
+

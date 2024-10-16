@@ -1,0 +1,40 @@
+.industry-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.industry-item {
+  display: flex;
+  align-items: center;
+  width: calc(25% - 20px);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.industry-item:hover {
+  transform: scale(1.05); /* Slight scaling of the whole item on hover */
+  cursor: pointer;
+}
+
+.industry-item p {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+  text-align: left;
+  transition: color 0.3s ease; /* Smooth transition for the color change */
+}
+
+.industry-item:hover p {
+  color: #001a55; /* Change text color on hover */
+  cursor: pointer;
+}
+
+.industry-item img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
