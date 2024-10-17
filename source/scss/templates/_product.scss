@@ -23,8 +23,8 @@
 
 .product-img {
     img {
-        width: 80%;
-        height: 40vh;  // Using viewport height for responsive height
+        width: 100%;
+        height: 25vh;  // Using viewport height for responsive height
         object-fit: cover;
     }
 
@@ -46,5 +46,10 @@
             object-fit: cover;
         }
     }
+}
+
+
+.product-section {
+    padding: 9vh 0;
 }
 
